@@ -1,0 +1,87 @@
+{
+  "module": 2,
+  "title": "Microsoft Copilot Chat",
+  "icon": "💬",
+  "questions": [
+    {
+      "id": "m2q1",
+      "type": "single",
+      "question": "What is the key difference between Microsoft 365 Copilot Chat and the licensed Microsoft 365 Copilot?",
+      "options": [
+        "Copilot Chat is grounded in the web, while the licensed Microsoft 365 Copilot can also reason over your work data in Microsoft Graph",
+        "Copilot Chat is grounded in your work data, while Microsoft 365 Copilot only uses the web",
+        "They are identical except that Microsoft 365 Copilot is faster",
+        "Neither product can access web content"
+      ],
+      "correct": [0],
+      "explanation": "As part of the chat experience, Copilot Chat is grounded in the web. The paid Microsoft 365 Copilot adds grounding in work data such as your files, meetings, emails, and chats.",
+      "source": "https://learn.microsoft.com/en-us/copilot/faq"
+    },
+    {
+      "id": "m2q2",
+      "type": "single",
+      "question": "When web grounding is enabled, what does Copilot Chat send to the Bing search service?",
+      "options": [
+        "A short generated search query of a few words, not your entire prompt",
+        "Your full original prompt, word for word, every time",
+        "Your uploaded files in their entirety",
+        "Your username and tenant ID so results can be personalized"
+      ],
+      "correct": [0],
+      "explanation": "Copilot generates a brief search query from your prompt and sends that to Bing. It does not send your whole prompt, your files, or user and tenant identifiers.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-365/copilot/manage-public-web-access"
+    },
+    {
+      "id": "m2q3",
+      "type": "truefalse",
+      "question": "Files you upload to Microsoft 365 Copilot Chat are stored in your OneDrive for Business, can be deleted at any time, and are not used to train the model.",
+      "options": ["True", "False"],
+      "correct": [0],
+      "explanation": "Uploaded files are protected as enterprise data: stored in your OneDrive for Business, deletable by you at any time, and never used to train the underlying models.",
+      "source": "https://learn.microsoft.com/en-us/copilot/faq"
+    },
+    {
+      "id": "m2q4",
+      "type": "multi",
+      "question": "Select all the ways you can bring your own content into a Copilot Chat prompt.",
+      "options": [
+        "Type or paste the content directly into the chat",
+        "Upload a file using the plus button",
+        "Drag and drop a file into the chat box",
+        "Type / to open the ContextIQ menu and pick a file you can access",
+        "Email the file to a special Copilot mailbox address"
+      ],
+      "correct": [0, 1, 2, 3],
+      "explanation": "You can paste text, upload with the plus button, drag and drop a file, or type / to choose a file through ContextIQ. There is no Copilot email address for adding content.",
+      "source": "https://learn.microsoft.com/en-us/copilot/privacy-and-protections"
+    },
+    {
+      "id": "m2q5",
+      "type": "multi",
+      "question": "Select all that apply about Microsoft 365 Copilot Chat.",
+      "options": [
+        "It can reason over an uploaded PDF, Word, or Excel file to answer questions or summarize it",
+        "It can distill information from multiple web sources into a single answer",
+        "It provides linked citations you can follow to verify the answer",
+        "Its answers are guaranteed accurate, so you never need to check them"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Copilot Chat can reason over uploaded files and combine several web sources into one cited answer. It is not guaranteed accurate, so you should still verify important results.",
+      "source": "https://learn.microsoft.com/en-us/copilot/faq"
+    },
+    {
+      "id": "m2q6",
+      "type": "single",
+      "question": "Where can you see the actual web search queries Copilot Chat sent to Bing for a response?",
+      "options": [
+        "As web search query citations in the response's citation section, available in the thread for 24 hours",
+        "They are hidden from users for privacy and never shown",
+        "Only the source websites are shown, never the search terms",
+        "They stay permanently attached to the saved chat forever"
+      ],
+      "correct": [0],
+      "explanation": "Copilot surfaces the exact queries it sent as web search query citations in the linked-citation section, and these remain available in the thread for 24 hours.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-365/copilot/manage-public-web-access"
+    }
+  ]
+}

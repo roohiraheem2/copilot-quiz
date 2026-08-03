@@ -1,0 +1,88 @@
+{
+  "module": 1,
+  "title": "Generative AI & Copilot Foundations",
+  "icon": "🧠",
+  "questions": [
+    {
+      "id": "m1q1",
+      "type": "single",
+      "question": "In a large language model, what is a \"token\"?",
+      "options": [
+        "A unit of text such as a whole word, a sub-word, or punctuation that the model processes",
+        "Always exactly one whole word",
+        "A numeric weight the model adjusts while training",
+        "A single character, and never more than one"
+      ],
+      "correct": [0],
+      "explanation": "A tokenizer splits text into tokens, which can be whole words, sub-words (like \"un\" in \"unbelievable\"), or punctuation. A token is not always a single word or a single character.",
+      "source": "https://learn.microsoft.com/en-us/dotnet/ai/conceptual/understanding-tokens"
+    },
+    {
+      "id": "m1q2",
+      "type": "truefalse",
+      "question": "A large language model builds its answer one token at a time, predicting the next token and adding it to the sequence, much like auto-complete.",
+      "options": ["True", "False"],
+      "correct": [0],
+      "explanation": "The model predicts the next token, appends it, then uses the longer sequence to predict the following token, generating output token by token rather than all at once.",
+      "source": "https://learn.microsoft.com/en-us/dotnet/ai/conceptual/how-genai-and-llms-work"
+    },
+    {
+      "id": "m1q3",
+      "type": "single",
+      "question": "Why does a very long prompt leave less room for the model's response?",
+      "options": [
+        "Because the context window is a maximum number of tokens shared by the input and the output together",
+        "Because the context window limits only the output, not the input",
+        "Because the context window is measured in words, not tokens",
+        "Because long prompts are automatically deleted"
+      ],
+      "correct": [0],
+      "explanation": "A model's context window caps the total tokens for input and output combined, so a longer prompt leaves fewer tokens available for the answer.",
+      "source": "https://learn.microsoft.com/en-us/dotnet/ai/conceptual/understanding-tokens"
+    },
+    {
+      "id": "m1q4",
+      "type": "multi",
+      "question": "Which of the following are part of Microsoft's family of Copilot experiences?",
+      "options": [
+        "Microsoft 365 Copilot",
+        "GitHub Copilot",
+        "Microsoft Security Copilot",
+        "Windows Disk Defragmenter",
+        "Excel's Goal Seek tool"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Microsoft offers a family of Copilot experiences across its cloud, including Microsoft 365 Copilot, GitHub Copilot, and Microsoft Security Copilot. Disk Defragmenter and Goal Seek are unrelated, older utilities.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-cloud/dev/copilot/overview"
+    },
+    {
+      "id": "m1q5",
+      "type": "multi",
+      "question": "Which of these are among Microsoft's six Responsible AI principles?",
+      "options": [
+        "Fairness",
+        "Reliability and safety",
+        "Accountability",
+        "Profitability",
+        "Speed"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Microsoft's Responsible AI Standard is built on fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. Profitability and speed are not principles.",
+      "source": "https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai"
+    },
+    {
+      "id": "m1q6",
+      "type": "single",
+      "question": "According to Microsoft, how should business leaders judge the value of a generative AI solution?",
+      "options": [
+        "By the problem it solves and the measurable outcomes it delivers, such as time saved or cost reduction",
+        "By how technically advanced the underlying model is",
+        "By how many employees it can replace",
+        "By how much existing data it can delete"
+      ],
+      "correct": [0],
+      "explanation": "Microsoft advises evaluating generative AI by the problem solved, the measurable business outcomes, and alignment with strategic goals, not by the model's technical sophistication alone.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/understand-foundations-generative-ai-business-leaders/3-explore-business-value-generative-ai-solutions"
+    }
+  ]
+}

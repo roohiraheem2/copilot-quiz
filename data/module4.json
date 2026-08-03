@@ -1,0 +1,87 @@
+{
+  "module": 4,
+  "title": "M365 Copilot – Word, Excel, PowerPoint",
+  "icon": "📊",
+  "questions": [
+    {
+      "id": "m4q1",
+      "type": "single",
+      "question": "After \"Draft with Copilot\" generates a first draft in Word, what can you do with it?",
+      "options": [
+        "Keep it, Regenerate it, or Discard it, or type a follow-up such as \"Make it more formal\"",
+        "Only Accept or Reject it",
+        "Nothing; Copilot inserts it automatically with no options",
+        "Only translate it into another language"
+      ],
+      "correct": [0],
+      "explanation": "Copilot generates a draft you can keep, regenerate, or discard, and you can refine it with follow-up prompts like making it more formal. It is not inserted automatically.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/draft-impactful-documents-using-ai/2-get-started-word-copilot"
+    },
+    {
+      "id": "m4q2",
+      "type": "truefalse",
+      "question": "To use Copilot in Excel, your workbook should be saved to the cloud (such as OneDrive) and your data should be formatted as a table or a supported range.",
+      "options": ["True", "False"],
+      "correct": [0],
+      "explanation": "Copilot in Excel needs the file saved to OneDrive (or SharePoint) and the data formatted as a table or supported range so it can read and analyze it.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/analyze-visualize-data-copilot/2-analyze-data-workflows-excel"
+    },
+    {
+      "id": "m4q3",
+      "type": "single",
+      "question": "What can Copilot in Excel do with formulas?",
+      "options": [
+        "Generate formulas and calculated columns, and explain what an existing formula does",
+        "Explain existing formulas but never create new ones",
+        "Only perform calculations by writing VBA macros",
+        "Nothing; Copilot cannot work with formulas"
+      ],
+      "correct": [0],
+      "explanation": "Copilot can generate formulas and new calculated columns from your data, and it can also explain how an existing formula works.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/copilot-office-applications/5-copilot-in-excel"
+    },
+    {
+      "id": "m4q4",
+      "type": "single",
+      "question": "How does Copilot in PowerPoint create a presentation from a prompt?",
+      "options": [
+        "It first generates an editable outline where you can set the length and tone, then you select Generate slides",
+        "It immediately produces final slides with no outline or editing step",
+        "It only works if you already have slides to edit",
+        "It converts the whole prompt into a single slide"
+      ],
+      "correct": [0],
+      "explanation": "Copilot first creates an editable outline of topics and lets you adjust length and tone before you generate the slides.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/copilot-office-applications/4-copilot-in-powerpoint"
+    },
+    {
+      "id": "m4q5",
+      "type": "multi",
+      "question": "Select all the ways Copilot in Excel can present insights about your data.",
+      "options": [
+        "As charts",
+        "As PivotTables",
+        "As summaries of trends",
+        "By highlighting outliers",
+        "By emailing your workbook to other organizations"
+      ],
+      "correct": [0, 1, 2, 3],
+      "explanation": "Copilot in Excel can surface insights as charts, PivotTables, summaries, trends, and outliers. It does not send your workbook to other organizations.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/copilot-office-applications/5-copilot-in-excel"
+    },
+    {
+      "id": "m4q6",
+      "type": "multi",
+      "question": "Select all that apply about Copilot in Word.",
+      "options": [
+        "It can summarize a document into bullet points with references to where the information came from",
+        "It can rewrite selected text into alternative versions you can Replace or Insert",
+        "It can turn selected text into a table",
+        "It can only work with documents shorter than three pages"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Copilot in Word can summarize with citations, rewrite selected text into alternatives, and convert text into a table. There is no three-page limit.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/copilot-office-applications/3-copilot-in-word"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "module": 3,
+  "title": "Prompt Engineering",
+  "icon": "✍️",
+  "questions": [
+    {
+      "id": "m3q1",
+      "type": "single",
+      "question": "Microsoft describes an effective Microsoft 365 Copilot prompt as focusing on four key elements. What are they?",
+      "options": [
+        "Goal, context, source, and expectations",
+        "Role, task, tone, and length",
+        "Goal, context, format, and temperature",
+        "Context, goal, persona, and price"
+      ],
+      "correct": [0],
+      "explanation": "Microsoft frames a good prompt around four elements: a goal, context, a source, and expectations. A clear goal is the foundation, and the others make responses more accurate.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/write-effective-prompts-do-more-prompting/2-write-effective-prompt"
+    },
+    {
+      "id": "m3q2",
+      "type": "single",
+      "question": "In this prompt framework, what does the \"source\" element do?",
+      "options": [
+        "Points Copilot to specific information to use, such as referencing a file or a web source",
+        "Sets the tone and target audience of the response",
+        "States the main task you want completed",
+        "Cites your prompt so other people can reuse it"
+      ],
+      "correct": [0],
+      "explanation": "The source tells Copilot where to look, for example by referencing specific files or web sources. Tone and audience belong to expectations, and the task is the goal.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/write-effective-prompts-do-more-prompting/2-write-effective-prompt"
+    },
+    {
+      "id": "m3q3",
+      "type": "single",
+      "question": "What does the \"expectations\" element of a prompt describe?",
+      "options": [
+        "How Copilot should deliver the answer, including the intended audience and tone",
+        "Where Copilot should search for its information",
+        "The overall goal or task you want done",
+        "How quickly Copilot should respond"
+      ],
+      "correct": [0],
+      "explanation": "Expectations set how the response should be delivered, such as the audience and tone. Where to look is the source, and what to do is the goal.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/write-effective-prompts-do-more-prompting/2-write-effective-prompt"
+    },
+    {
+      "id": "m3q4",
+      "type": "truefalse",
+      "question": "Microsoft recommends giving examples in your prompt to guide Copilot's response, because generative AI is good at imitation.",
+      "options": ["True", "False"],
+      "correct": [0],
+      "explanation": "Providing examples (a few-shot approach) is a recommended technique, since generative AI excels at imitating the style and structure you show it.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/write-effective-prompts-do-more-prompting/2-write-effective-prompt"
+    },
+    {
+      "id": "m3q5",
+      "type": "multi",
+      "question": "Select all of Microsoft's recommended prompting best practices.",
+      "options": [
+        "Refine and iterate on your prompt if the first response is not quite right",
+        "Review Copilot's responses for accuracy, grammar, and style",
+        "Keep prompts conversational and use clear, plain language",
+        "Give several conflicting instructions in a single prompt",
+        "Accept the first answer unchanged to save usage"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Best practices include iterating on prompts, checking responses for accuracy, and writing clearly and conversationally. Conflicting instructions confuse Copilot, and you should refine rather than settle for the first answer.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/write-effective-prompts-do-more-prompting/3-review-prompting-best-practices"
+    },
+    {
+      "id": "m3q6",
+      "type": "multi",
+      "question": "Select all that apply about writing prompts for Copilot.",
+      "options": [
+        "A clear goal is the foundation of a prompt",
+        "Adding context, expectations, and sources makes responses more accurate",
+        "Context can include why you need something and who is involved",
+        "Like a search engine, Copilot works best with short keyword prompts"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "A clear goal anchors the prompt, and context, expectations, and sources improve accuracy. Unlike a search engine, Copilot responds best to detailed prompts, not short keywords.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/write-effective-prompts-do-more-prompting/2-write-effective-prompt"
+    }
+  ]
+}

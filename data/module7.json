@@ -1,0 +1,86 @@
+{
+  "module": 7,
+  "title": "Copilot Agents & Use Cases",
+  "icon": "🤖",
+  "questions": [
+    {
+      "id": "m7q1",
+      "type": "single",
+      "question": "What distinguishes a Copilot agent from a general personal assistant?",
+      "options": [
+        "It can be tailored to a particular expertise and can act on your behalf, not just respond",
+        "It is just Copilot Chat with a new name and no extra capability",
+        "It can only answer questions and can never take actions",
+        "It cannot be focused on any specific area"
+      ],
+      "correct": [0],
+      "explanation": "An agent goes beyond responding: it can work alongside you or act on your behalf, and it can be given a specific expertise, such as knowing a company's product catalog.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/explore-microsoft-365-copilot-agents/3-what-are-agents"
+    },
+    {
+      "id": "m7q2",
+      "type": "single",
+      "question": "When is a Copilot agent usually a better fit than plain Copilot?",
+      "options": [
+        "When a process is repeatable, has multiple steps, or needs to connect to systems outside Microsoft 365",
+        "For quick, one-off requests inside a Microsoft 365 app",
+        "Always, because agents are more powerful in every situation",
+        "Only for summarizing a single document"
+      ],
+      "correct": [0],
+      "explanation": "Copilot suits unplanned, one-off tasks inside Microsoft 365 apps, while agents fit repeatable, multi-step processes or ones that connect to outside systems.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/explore-microsoft-365-copilot-agents/7-explore-real-world-use-cases-copilot-agents"
+    },
+    {
+      "id": "m7q3",
+      "type": "truefalse",
+      "question": "For predictable, high-volume requests such as IT password resets or HR vacation-policy questions, a prebuilt agent can provide immediate relief.",
+      "options": ["True", "False"],
+      "correct": [0],
+      "explanation": "When a department faces standardized, repetitive requests like password resets or policy questions, a prebuilt agent is well suited to handle them.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/explore-microsoft-365-copilot-agents/7-explore-real-world-use-cases-copilot-agents"
+    },
+    {
+      "id": "m7q4",
+      "type": "multi",
+      "question": "Select all valid knowledge sources for a Copilot agent.",
+      "options": [
+        "Trusted public websites",
+        "SharePoint content",
+        "Copilot connectors that link to external apps and services",
+        "Only the user's local hard drive"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Agents can be grounded in trusted web content, SharePoint content, and Copilot connectors to external systems. They are not limited to a local hard drive.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/explore-microsoft-365-copilot-agents/3-what-are-agents"
+    },
+    {
+      "id": "m7q5",
+      "type": "multi",
+      "question": "Select all the main areas in which a Copilot agent can boost productivity.",
+      "options": [
+        "Retrieving information",
+        "Performing actions",
+        "Operating independently",
+        "Only generating images and slide designs"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Agents help in three main areas: retrieving information, performing actions, and operating independently. Image and slide generation is not their defining purpose.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/explore-microsoft-365-copilot-agents/3-what-are-agents"
+    },
+    {
+      "id": "m7q6",
+      "type": "single",
+      "question": "The Employee Self-Service agent provides a single conversational interface for which kinds of tasks?",
+      "options": [
+        "Querying HR policies, opening IT support tickets, and updating personal information",
+        "Only HR questions, with no IT capabilities",
+        "Only booking meeting rooms",
+        "Only questions about public web content"
+      ],
+      "correct": [0],
+      "explanation": "The Employee Self-Service agent unifies employee requests, letting users query HR policies, start IT support tickets, and update personal information, with separate HR and IT starters.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-365/copilot/employee-self-service/overview"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "course": "Microsoft Copilot",
+  "subtitle": "Beginner to Intermediate",
+  "questionsPerModule": 6,
+  "modules": [
+    { "number": 1, "title": "Generative AI & Copilot Foundations", "icon": "🧠", "file": "data/module1.json", "count": 6 },
+    { "number": 2, "title": "Microsoft Copilot Chat", "icon": "💬", "file": "data/module2.json", "count": 6 },
+    { "number": 3, "title": "Prompt Engineering", "icon": "✍️", "file": "data/module3.json", "count": 6 },
+    { "number": 4, "title": "M365 Copilot – Word, Excel, PowerPoint", "icon": "📊", "file": "data/module4.json", "count": 6 },
+    { "number": 5, "title": "M365 Copilot – Outlook & Teams", "icon": "📨", "file": "data/module5.json", "count": 6 },
+    { "number": 6, "title": "Copilot Pages & Content Creation", "icon": "📄", "file": "data/module6.json", "count": 6 },
+    { "number": 7, "title": "Copilot Agents & Use Cases", "icon": "🤖", "file": "data/module7.json", "count": 6 },
+    { "number": 8, "title": "Copilot Studio Overview", "icon": "🛠️", "file": "data/module8.json", "count": 6 },
+    { "number": 9, "title": "Governance & Best Practices", "icon": "🔐", "file": "data/module9.json", "count": 6 }
+  ]
+}

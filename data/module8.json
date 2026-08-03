@@ -1,0 +1,88 @@
+{
+  "module": 8,
+  "title": "Copilot Studio Overview",
+  "icon": "🛠️",
+  "questions": [
+    {
+      "id": "m8q1",
+      "type": "single",
+      "question": "What is Microsoft Copilot Studio?",
+      "options": [
+        "A graphical, low-code tool for building agents and agent flows",
+        "A code-first SDK that requires C# or Python",
+        "A dashboard builder for Power BI reports",
+        "A tool that can only tweak the built-in Microsoft 365 Copilot"
+      ],
+      "correct": [0],
+      "explanation": "Copilot Studio is a graphical, low-code environment for building agents and agent flows, making agent creation accessible without deep technical skills.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio"
+    },
+    {
+      "id": "m8q2",
+      "type": "single",
+      "question": "In Copilot Studio, what is a \"topic\"?",
+      "options": [
+        "A portion of a conversation, built on a canvas from one or more nodes that send messages or ask questions",
+        "A single static FAQ answer that cannot branch",
+        "The channel where the agent is published",
+        "A type of user license"
+      ],
+      "correct": [0],
+      "explanation": "A topic represents a portion of a conversation and defines how it progresses. It is built on an authoring canvas from nodes that perform actions like sending a message or asking a question.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics"
+    },
+    {
+      "id": "m8q3",
+      "type": "truefalse",
+      "question": "With classic orchestration, a user's message does not have to exactly match a topic's trigger phrase; natural language understanding matches the message to the best topic.",
+      "options": ["True", "False"],
+      "correct": [0],
+      "explanation": "Trigger phrases teach the agent's language understanding. A message like \"see store opening hours\" can trigger a topic whose phrase is \"check store hours\" without an exact match.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-create-edit-topics"
+    },
+    {
+      "id": "m8q4",
+      "type": "multi",
+      "question": "Select all the building blocks a Copilot Studio agent coordinates to accomplish its goals.",
+      "options": [
+        "Instructions and context",
+        "Knowledge sources",
+        "Topics and tools",
+        "Triggers",
+        "The user's local antivirus software"
+      ],
+      "correct": [0, 1, 2, 3],
+      "explanation": "An agent coordinates language models along with instructions, context, knowledge sources, topics, tools, inputs, and triggers. Antivirus software is not part of an agent.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio"
+    },
+    {
+      "id": "m8q5",
+      "type": "multi",
+      "question": "Select all supported knowledge sources for a Copilot Studio agent.",
+      "options": [
+        "Public websites, searched via Bing over the sites you provide",
+        "SharePoint",
+        "Dataverse",
+        "Enterprise data made available through connectors",
+        "A hand-typed FAQ is the only option available"
+      ],
+      "correct": [0, 1, 2, 3],
+      "explanation": "Knowledge sources include public websites, SharePoint, Dataverse, uploaded documents, and enterprise data via connectors, all of which help ground the agent's answers.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio"
+    },
+    {
+      "id": "m8q6",
+      "type": "single",
+      "question": "Before customers can engage with a Copilot Studio agent, what must you do?",
+      "options": [
+        "Publish the agent, and republish after changes; publishing applies to all connected channels",
+        "Nothing; agents are live for customers the moment they are created",
+        "Publish every channel completely separately, with no shared step",
+        "Accept that agents can only ever run in Microsoft Teams"
+      ],
+      "correct": [0],
+      "explanation": "You must publish an agent before customers can use it, and republish after changes. Publishing applies to all the channels connected to the agent.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/publication-fundamentals-publish-channels"
+    }
+  ]
+}

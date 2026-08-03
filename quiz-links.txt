@@ -1,0 +1,17 @@
+Microsoft Copilot Quiz — shareable links
+=========================================
+Public site, no login required for anyone.
+
+MAIN LINK (all quizzes / landing page):
+  https://roohiraheem2.github.io/copilot-quiz/
+
+DIRECT LINK PER MODULE (opens that quiz straight away):
+  Module 1 — Generative AI & Copilot Foundations     https://roohiraheem2.github.io/copilot-quiz/?m=1
+  Module 2 — Microsoft Copilot Chat                   https://roohiraheem2.github.io/copilot-quiz/?m=2
+  Module 3 — Prompt Engineering                       https://roohiraheem2.github.io/copilot-quiz/?m=3
+  Module 4 — M365 Copilot: Word, Excel, PowerPoint    https://roohiraheem2.github.io/copilot-quiz/?m=4
+  Module 5 — M365 Copilot: Outlook & Teams            https://roohiraheem2.github.io/copilot-quiz/?m=5
+  Module 6 — Copilot Pages & Content Creation         https://roohiraheem2.github.io/copilot-quiz/?m=6
+  Module 7 — Copilot Agents & Use Cases               https://roohiraheem2.github.io/copilot-quiz/?m=7
+  Module 8 — Copilot Studio Overview                  https://roohiraheem2.github.io/copilot-quiz/?m=8
+  Module 9 — Governance & Best Practices              https://roohiraheem2.github.io/copilot-quiz/?m=9

@@ -1,0 +1,87 @@
+{
+  "module": 9,
+  "title": "Governance & Best Practices",
+  "icon": "🔐",
+  "questions": [
+    {
+      "id": "m9q1",
+      "type": "single",
+      "question": "Which organizational data can Microsoft 365 Copilot surface to a user?",
+      "options": [
+        "Only data the user already has at least view access to, using the same access controls as other Microsoft 365 services",
+        "Any file in the tenant, regardless of who can open it",
+        "Only files the user personally created or owns",
+        "Anything, because it temporarily elevates the user's access"
+      ],
+      "correct": [0],
+      "explanation": "Copilot respects existing permissions: it only surfaces content a user can already access, using the same underlying access controls as the rest of Microsoft 365.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy"
+    },
+    {
+      "id": "m9q2",
+      "type": "truefalse",
+      "question": "Your prompts, responses, and data accessed through Microsoft Graph are not used to train the foundation large language models.",
+      "options": ["True", "False"],
+      "correct": [0],
+      "explanation": "Under enterprise data protection, prompts, responses, and Microsoft Graph data are not used to train the foundation models used by Microsoft 365 Copilot.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-365/copilot/enterprise-data-protection"
+    },
+    {
+      "id": "m9q3",
+      "type": "single",
+      "question": "Because Copilot's responses are not guaranteed to be fully factual, what should users do?",
+      "options": [
+        "Review and fact-check the output before relying on it or sharing it",
+        "Trust it fully, since Microsoft certifies every answer",
+        "Nothing, because Copilot sends drafts automatically",
+        "Assume it is always accurate"
+      ],
+      "correct": [0],
+      "explanation": "Copilot can occasionally be wrong, so responsible use means reviewing and fact-checking its output before you rely on it or send it to others.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy"
+    },
+    {
+      "id": "m9q4",
+      "type": "multi",
+      "question": "Select all that are true about how Microsoft 365 Copilot protects data.",
+      "options": [
+        "It honors Microsoft Purview sensitivity labels and the user's usage rights",
+        "Customer content is logically isolated between tenants",
+        "Data is encrypted both at rest and in transit",
+        "It pools data from all tenants into one shared index"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Copilot inherits sensitivity labels and usage rights, keeps tenants logically isolated, and encrypts data at rest and in transit. It does not pool tenant data into a shared index.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy"
+    },
+    {
+      "id": "m9q5",
+      "type": "multi",
+      "question": "Select all of Microsoft's recommended practices for rolling out Copilot.",
+      "options": [
+        "Begin with a limited pilot to a small group of users",
+        "Gather feedback and build internal champions who support broader adoption",
+        "Measure adoption and business impact with built-in reporting such as the Copilot Dashboard and admin usage reports",
+        "Enable Copilot for everyone at once and skip any pilot",
+        "Measure success solely by the number of licenses purchased"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Microsoft recommends a phased rollout: pilot with a small group, build champions, and measure impact with tools like the Copilot Dashboard. A big-bang launch and license counts are not the recommended approach.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-minimum-requirements-rollout"
+    },
+    {
+      "id": "m9q6",
+      "type": "single",
+      "question": "Why is remediating oversharing an important step before deploying Copilot?",
+      "options": [
+        "Because Copilot can surface any content a user already has access to, so a governed data foundation reduces risk",
+        "Because Copilot only ever accesses public files",
+        "Because Copilot cannot read SharePoint content",
+        "Because getting data ready mainly means deleting all old files"
+      ],
+      "correct": [0],
+      "explanation": "Since Copilot surfaces content users can already reach, remediating oversharing and excessive permissions first creates a secure, governed data foundation and lowers risk.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-365/copilot/configure-secure-governed-data-foundation-microsoft-365-copilot"
+    }
+  ]
+}

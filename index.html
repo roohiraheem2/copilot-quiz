@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft Copilot Quiz</title>
+  <meta name="description" content="A self-check quiz for the Microsoft Copilot (Beginner to Intermediate) course. Nine modules, six questions each." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <span class="brand-mark" aria-hidden="true">✨</span>
+      <span class="brand-name">Copilot Quiz</span>
+    </div>
+  </header>
+
+  <main id="main" class="wrap" tabindex="-1">
+
+    <!-- ============ LANDING ============ -->
+    <section id="screen-landing" class="screen is-active" aria-labelledby="landing-title">
+      <div class="hero">
+        <h1 id="landing-title">Microsoft Copilot Quiz</h1>
+        <p class="hero-sub">Test what you learned in the <strong>Beginner to Intermediate</strong> course. Pick a module, answer six questions, and get instant feedback.</p>
+      </div>
+      <div id="module-grid" class="module-grid" role="list" aria-label="Course modules">
+        <!-- module cards injected by app.js -->
+      </div>
+      <p id="landing-error" class="load-error" role="alert" hidden>Couldn't load the module list. Refresh the page to try again.</p>
+    </section>
+
+    <!-- ============ NAME ENTRY ============ -->
+    <section id="screen-name" class="screen" aria-labelledby="name-title">
+      <div class="card centered-card">
+        <div class="name-chip">
+          <span class="chip-icon" id="name-module-icon" role="img" aria-label="">🧠</span>
+          <span id="name-module-title">Module</span>
+        </div>
+        <h2 id="name-title"><span aria-hidden="true">👋</span> Before we start</h2>
+        <p class="muted">What should we call you? Your name only appears on your result and stays in this browser tab — it is never saved or sent anywhere.</p>
+        <form id="name-form" novalidate>
+          <label class="field-label" for="name-input">Your name</label>
+          <input id="name-input" name="name" type="text" autocomplete="off" maxlength="60"
+                 placeholder="e.g. Alex Morgan" aria-describedby="name-hint name-error" required />
+          <p id="name-hint" class="muted small">Required. This is not stored.</p>
+          <p id="name-error" class="field-error" role="alert" hidden>Please enter your name to continue.</p>
+          <div class="btn-row">
+            <button type="button" class="btn btn-ghost" data-action="back-to-modules">← All modules</button>
+            <button type="submit" class="btn btn-primary">Start quiz →</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ QUIZ ============ -->
+    <section id="screen-quiz" class="screen" aria-labelledby="quiz-module-title">
+      <div class="quiz-top">
+        <div class="quiz-heading">
+          <span class="chip-icon" id="quiz-module-icon" role="img" aria-label="">🧠</span>
+          <h2 id="quiz-module-title" class="quiz-module-title">Module</h2>
+        </div>
+        <p class="quiz-counter"><span id="q-current">1</span> of <span id="q-total">6</span></p>
+      </div>
+      <div class="progress" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0">
+        <div id="progress-fill" class="progress-fill"></div>
+      </div>
+
+      <div class="card quiz-card">
+        <p class="question-type" id="question-type" hidden></p>
+        <h3 class="question-text" id="question-text">Question</h3>
+        <form id="answer-form">
+          <ul id="options" class="options" role="group" aria-label="Answer options"></ul>
+          <div class="btn-row" id="submit-row" hidden>
+            <button type="submit" class="btn btn-primary" id="submit-answer">Submit answer</button>
+          </div>
+        </form>
+
+        <!-- reaction + explanation, revealed after answering -->
+        <div id="reaction" class="reaction" hidden>
+          <div class="reaction-badge" id="reaction-badge" aria-live="polite"></div>
+          <div class="explanation" id="explanation-panel">
+            <p class="explanation-head"><span aria-hidden="true">📘</span> Explanation</p>
+            <p id="explanation-text"></p>
+            <a id="source-link" class="source-link" href="#" target="_blank" rel="noopener noreferrer">
+              Source: Microsoft Learn <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="btn-row end">
+            <button type="button" class="btn btn-primary" id="next-btn">Next →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESULT ============ -->
+    <section id="screen-result" class="screen" aria-labelledby="result-headline">
+      <!-- Capturable result card -->
+      <div id="result-card" class="card result-card">
+        <div class="result-emoji" id="result-emoji" role="img" aria-label="">🏆</div>
+        <h2 id="result-headline" class="result-headline">Perfect Score</h2>
+        <p id="result-line" class="result-line">Encouraging line.</p>
+
+        <div class="result-meta">
+          <p class="result-name"><span id="result-name">Name</span></p>
+          <p class="result-module">
+            <span class="chip-icon" id="result-module-icon" role="img" aria-label="">🧠</span>
+            <span id="result-module-title">Module</span>
+          </p>
+        </div>
+
+        <div class="ring-wrap">
+          <svg class="ring" viewBox="0 0 120 120" width="140" height="140" role="img" aria-label="Score ring">
+            <circle class="ring-track" cx="60" cy="60" r="52" />
+            <circle class="ring-value" id="ring-value" cx="60" cy="60" r="52" transform="rotate(-90 60 60)" />
+          </svg>
+          <div class="ring-center">
+            <span class="ring-pct" id="ring-pct">0%</span>
+            <span class="ring-score" id="ring-score">0/6</span>
+          </div>
+        </div>
+
+        <p class="result-date"><span aria-hidden="true">📅</span> <span id="result-date">Date</span></p>
+
+        <div class="result-strip" id="result-strip" aria-label="Per-question results">
+          <!-- ✅/❌ chips injected -->
+        </div>
+      </div>
+
+      <div class="btn-row center wrap-btns">
+        <button type="button" class="btn btn-primary" id="download-btn"><span aria-hidden="true">📸</span> Download result as image</button>
+        <button type="button" class="btn btn-secondary" data-action="retake"><span aria-hidden="true">🔄</span> Retake module</button>
+        <button type="button" class="btn btn-ghost" data-action="back-to-modules">← All modules</button>
+      </div>
+      <p id="download-note" class="muted small center" role="status" aria-live="polite"></p>
+
+      <!-- Detailed review -->
+      <h3 class="review-title">Question review</h3>
+      <ol id="review-list" class="review-list"></ol>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="muted small">Practice quiz for learning. Content sourced from Microsoft Learn. Not affiliated with or endorsed by Microsoft.</p>
+    </div>
+  </footer>
+
+  <!-- confetti canvas overlay -->
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <!-- Only external dependency: html2canvas, used for the result-image download -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+          integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

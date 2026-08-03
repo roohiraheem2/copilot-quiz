@@ -1,0 +1,87 @@
+{
+  "module": 6,
+  "title": "Copilot Pages & Content Creation",
+  "icon": "📄",
+  "questions": [
+    {
+      "id": "m6q1",
+      "type": "single",
+      "question": "What is Copilot Pages?",
+      "options": [
+        "A persistent, editable canvas that turns a Copilot Chat response into content you can edit, add to, share, and work on with others",
+        "A read-only transcript of your chat history",
+        "A feature that exports a Copilot response as a static PDF",
+        "A separate note-taking app unrelated to Copilot Chat"
+      ],
+      "correct": [0],
+      "explanation": "Copilot Pages takes Copilot-generated content and puts it on a dynamic, persistent canvas you can edit, add to, share, and co-edit in real time.",
+      "source": "https://learn.microsoft.com/en-us/copilot/faq"
+    },
+    {
+      "id": "m6q2",
+      "type": "truefalse",
+      "question": "Content in a Copilot Page is saved and stored, so you can leave and come back to keep editing it rather than losing it when the chat session ends.",
+      "options": ["True", "False"],
+      "correct": [0],
+      "explanation": "Pages are durable and reusable because their content is stored (in SharePoint Embedded), so it persists after the chat session rather than disappearing.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-365/loop/cpcn-storage?view=o365-worldwide"
+    },
+    {
+      "id": "m6q3",
+      "type": "single",
+      "question": "Who can see a new Copilot Page by default?",
+      "options": [
+        "Only you; it is private until you choose to share it, similar to OneDrive",
+        "Everyone in your organization automatically",
+        "Your manager and team by default",
+        "Anyone on the public internet"
+      ],
+      "correct": [0],
+      "explanation": "A Copilot Page is private by default and is not shared or co-authored until you choose to share it, much like OneDrive.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-365/loop/cpcn-storage?view=o365-worldwide"
+    },
+    {
+      "id": "m6q4",
+      "type": "multi",
+      "question": "Select all that are part of real-time collaboration on a Copilot Page.",
+      "options": [
+        "Live editing by more than one person",
+        "Presence indicators showing who is on the page",
+        "Shared cursors",
+        "A locked mode where only one person can edit at a time",
+        "Manually merging separate private copies later"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Real-time collaboration includes live editing, presence indicators, and shared cursors. Pages are not locked to one editor, and there are no separate copies to merge.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-365/loop/cpcn-requirements?view=o365-worldwide"
+    },
+    {
+      "id": "m6q5",
+      "type": "single",
+      "question": "When you share a Copilot Page, what access can you grant?",
+      "options": [
+        "Either edit or read-only access, using a company-wide link or a people-specific link",
+        "Only full edit rights; read-only sharing is not possible",
+        "Only by sending the page as an email attachment",
+        "Sharing always shares your entire notebook, not just the one page"
+      ],
+      "correct": [0],
+      "explanation": "You can grant edit or read-only access and choose a company-wide or people-specific link, depending on your organization's sharing settings.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-365/loop/cpcn-permission?view=o365-worldwide"
+    },
+    {
+      "id": "m6q6",
+      "type": "multi",
+      "question": "Select all that are true about how Copilot Pages support a knowledge-creation workflow.",
+      "options": [
+        "Its content is saved and persists, so you can leave and return to keep editing",
+        "It is private by default until you choose to share it",
+        "It disappears as soon as you close the Copilot Chat window",
+        "It is stored only in your browser cache on one device"
+      ],
+      "correct": [0, 1],
+      "explanation": "Pages turn ephemeral chat into durable, shareable content: the content persists and is private by default. It does not vanish when you close chat, and it is not just browser cache.",
+      "source": "https://learn.microsoft.com/en-us/microsoft-365/loop/cpcn-storage?view=o365-worldwide"
+    }
+  ]
+}

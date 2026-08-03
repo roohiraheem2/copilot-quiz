@@ -1,0 +1,86 @@
+{
+  "module": 5,
+  "title": "M365 Copilot – Outlook & Teams",
+  "icon": "📨",
+  "questions": [
+    {
+      "id": "m5q1",
+      "type": "single",
+      "question": "What does \"Summary by Copilot\" do at the top of an email thread in Outlook?",
+      "options": [
+        "Generates a summary that highlights the key points and identifies actions where possible",
+        "Deletes the original messages after summarizing",
+        "Emails the summary to everyone in the thread",
+        "Only summarizes threads you have already replied to"
+      ],
+      "correct": [0],
+      "explanation": "Copilot summarizes the thread, highlighting key points and pointing out possible action items. It does not delete messages or send the summary to participants.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/from-inbox-impact-improve-your-email-workflows-ai/2-draft-engaging-emails"
+    },
+    {
+      "id": "m5q2",
+      "type": "single",
+      "question": "What does \"Coaching by Copilot\" in Outlook do?",
+      "options": [
+        "Reviews a draft you wrote and suggests improvements to tone, clarity, and structure",
+        "Writes a brand-new draft instead of giving feedback on yours",
+        "Only checks spelling and grammar",
+        "Sends the email on your behalf"
+      ],
+      "correct": [0],
+      "explanation": "Coaching analyzes your own draft and suggests improvements to tone, clarity, and structure, which you can apply one at a time or all at once.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/from-inbox-impact-improve-your-email-workflows-ai/2-draft-engaging-emails"
+    },
+    {
+      "id": "m5q3",
+      "type": "truefalse",
+      "question": "Teams intelligent recap requires transcription to be turned on in order to provide its AI meeting notes and AI-recommended tasks.",
+      "options": ["True", "False"],
+      "correct": [0],
+      "explanation": "Intelligent recap depends on transcription. If recording is off you can still get a recap, but it comes without the recording, speakers, topics, and chapters.",
+      "source": "https://learn.microsoft.com/en-us/microsoftteams/intelligent-recap-calls-meetings"
+    },
+    {
+      "id": "m5q4",
+      "type": "single",
+      "question": "After a Teams meeting, where do you find AI meeting notes and AI-recommended tasks?",
+      "options": [
+        "In the Recap tab in the Teams calendar and chat",
+        "Only during the live meeting; nothing is available afterward",
+        "As a plain video recording with no notes or tasks",
+        "They are emailed to you as a PDF only"
+      ],
+      "correct": [0],
+      "explanation": "Intelligent recap provides AI notes, recommended tasks, speaker markers, and chapters through the Recap tab in the Teams calendar and chat after the meeting.",
+      "source": "https://learn.microsoft.com/en-us/microsoftteams/intelligent-recap-calls-meetings"
+    },
+    {
+      "id": "m5q5",
+      "type": "multi",
+      "question": "Select all that a Copilot post-meeting summary in Teams can capture.",
+      "options": [
+        "Who contributed to each topic",
+        "Where the team aligned or disagreed",
+        "Action items that were proposed",
+        "A full summary even when no transcript exists"
+      ],
+      "correct": [0, 1, 2],
+      "explanation": "Using the transcript and chat, Copilot captures who contributed, where people agreed or disagreed, and proposed action items. It needs a transcript to generate the summary.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/manage-meetings-collaboration/2-streamline-meeting-prep"
+    },
+    {
+      "id": "m5q6",
+      "type": "multi",
+      "question": "Select all that apply about drafting an email with Copilot in Outlook (\"Help me write\").",
+      "options": [
+        "If the draft is not right, you can adjust its tone or length",
+        "You can enter a new prompt and generate again before keeping it",
+        "The draft is sent automatically as soon as it is generated",
+        "Once generated, a draft can never be regenerated"
+      ],
+      "correct": [0, 1],
+      "explanation": "You can adjust tone and length or re-prompt and regenerate before keeping a draft. Nothing is sent automatically, and drafts can be regenerated.",
+      "source": "https://learn.microsoft.com/en-us/training/modules/from-inbox-impact-improve-your-email-workflows-ai/2-draft-engaging-emails"
+    }
+  ]
+}
